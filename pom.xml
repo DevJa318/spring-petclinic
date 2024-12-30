@@ -12,7 +12,13 @@
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
   <version>4.0.1-SNAPSHOT</version>
-
+<distributionManagement>
+    <repository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/DevJa318/spring-petclinic</url>
+    </repository>
+</distributionManagement>
   <name>petclinic</name>
 
   <scm>
