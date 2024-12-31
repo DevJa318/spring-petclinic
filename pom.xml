@@ -12,20 +12,14 @@
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
   <version>4.0.1-SNAPSHOT</version>
-<distributionManagement>
-    <repository>
-        <id>github</id>
-        <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/DevJa318/spring-petclinic</url>
-    </repository>
-</distributionManagement>
+
   <name>petclinic</name>
 
-  <scm>
-    <developerConnection>scm:git:https://github.com/DevJa318/spring-petclinic</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
-
+<scm>
+  <connection>scm:git:https://github.com/DevJa318/spring-petclinic.git</connection>
+  <developerConnection>scm:git:https://github.com/DevJa318/spring-petclinic.git</developerConnection>
+  <url>https://github.com/Devja318/spring-petclinic</url>
+</scm>
   <properties>
 
     <!-- Generic properties -->
@@ -48,7 +42,8 @@
     <maven-checkstyle.version>3.6.0</maven-checkstyle.version>
     <nohttp-checkstyle.version>0.0.11</nohttp-checkstyle.version>
     <spring-format.version>0.0.43</spring-format.version>
-
+<maven.compiler.source>1.8</maven.compiler.source>
+<maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
