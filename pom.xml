@@ -42,7 +42,7 @@
     <maven-checkstyle.version>3.6.0</maven-checkstyle.version>
     <nohttp-checkstyle.version>0.0.11</nohttp-checkstyle.version>
     <spring-format.version>0.0.43</spring-format.version>
->
+
   </properties>
 
   <dependencies>
@@ -300,24 +300,6 @@
           </execution>
         </executions>
       </plugin>
-      <!-- Plugin from https://stackoverflow.com/questions/796486/how-to-create-a-release-package-with-maven -->
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <configuration>
-            <descriptors>
-                <descriptor>src/main/assembly/assembly.xml</descriptor>
-            </descriptors>
-        </configuration>
-        <executions>
-            <execution>
-                <phase>package</phase>
-                <goals>
-                    <goal>single</goal>
-                </goals>
-            </execution>
-        </executions>
-    </plugin>
       <!-- Spring Boot Actuator displays build-related information if a git.properties file is
       present at the classpath -->
       <plugin>
