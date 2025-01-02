@@ -14,18 +14,11 @@
   <version>3.4.0-SNAPSHOT</version>
 
   <name>petclinic</name>
-
   <scm>
-    <developerConnection>scm:git:https://github.com/DevJa318/spring-petclinic</developerConnection>
+    <connection>scm:git:https://github.com/DevJa318/spring-petclinic.git</connection>
+    <developerConnection>scm:git:https://github.com/DevJa318/spring-petclinic.git</developerConnection>
+    <url>https://github.com/Devja318/spring-petclinic</url>
   </scm>
-<distributionManagement>
-    <repository>
-        <id>github</id>
-<name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/DevJa318/spring-petclinic</url>
-    </repository>
-</distributionManagement>
-   <name>petclinic</name>
   <properties>
 
     <!-- Generic properties -->
