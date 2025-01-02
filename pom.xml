@@ -18,7 +18,14 @@
   <scm>
     <developerConnection>scm:git:https://github.com/DevJa318/spring-petclinic</developerConnection>
   </scm>
-
+<distributionManagement>
+    <repository>
+        <id>github</id>
+<name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/DevJa318/spring-petclinic</url>
+    </repository>
+</distributionManagement>
+   <name>petclinic</name>
   <properties>
 
     <!-- Generic properties -->
