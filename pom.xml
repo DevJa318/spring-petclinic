@@ -16,6 +16,7 @@
   <name>petclinic</name>
 
 <distributionManagement>
+
   <repository>
     <id>nexus-repo</id>
     <url>http://localhost:8081/repository/maven-releases</url>
@@ -25,7 +26,12 @@
     <url>http://localhost:8081/repository/maven-snapshots</url>
   </snapshotRepository>
 </distributionManagement>
-
+  <scm>
+    <connection>scm:git:https://github.com/DevJa318/spring-petclinic.git</connection>
+    <developerConnection>scm:git:https://github.com/DevJa318/spring-petclinic.git</developerConnection>
+    <url>https://github.com/Devja318/spring-petclinic</url>
+    <tag>v4.0.0</tag>
+  </scm>
   <properties>
 
     <!-- Generic properties -->
