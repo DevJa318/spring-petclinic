@@ -9,17 +9,11 @@
     <relativePath />
   </parent>
 
-  <groupId>org.springframework.samples</groupId>
-  <artifactId>spring-petclinic</artifactId>
-  <version>4.0.0</version>
-
   <name>petclinic</name>
-
-<scm>
-  <connection>scm:git:https://github.com/DevJa318/spring-petclinic.git</connection>
-  <developerConnection>scm:git:https://github.com/DevJa318/spring-petclinic.git</developerConnection>
-  <url>https://github.com/Devja318/spring-petclinic</url>
-  <tag>v4.0.0</tag>
+  <scm>
+    <connection>scm:git:https://github.com/DevJa318/spring-petclinic.git</connection>
+    <developerConnection>scm:git:https://github.com/DevJa318/spring-petclinic.git</developerConnection>
+    <url>https://github.com/Devja318/spring-petclinic</url>
   </scm>
   <properties>
 
@@ -240,7 +234,25 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+      <!-- Plugin from https://stackoverflow.com/questions/796486/how-to-create-a-release-package-with-maven -->
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+            <descriptors>
+                <descriptor>src/main/assembly/assembly.xml</descriptor>
+            </descriptors>
+        </configuration>
+        <executions>
+            <execution>
+                <phase>package</phase>
+                <goals>
+                    <goal>single</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+     <plugin>
         <groupId>org.graalvm.buildtools</groupId>
         <artifactId>native-maven-plugin</artifactId>
       </plugin>
