@@ -6,18 +6,19 @@
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>3.4.0</version>
-    <relativePath></relativePath>
+    <relativePath />
   </parent>
 
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>3.4.0-SNAPSHOT</version>
+  <version>4.1.0-SNAPSHOT</version>
 
   <name>petclinic</name>
   <scm>
     <connection>scm:git:https://github.com/DevJa318/spring-petclinic.git</connection>
     <developerConnection>scm:git:https://github.com/DevJa318/spring-petclinic.git</developerConnection>
     <url>https://github.com/Devja318/spring-petclinic</url>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
@@ -28,7 +29,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <!-- Important for reproducible builds. Update using e.g. ./mvnw versions:set
         -DnewVersion=... -->
-    <project.build.outputTimestamp>2025-01-02T09:22:57Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2025-01-02T12:54:29Z</project.build.outputTimestamp>
 
     <!-- Web dependencies -->
     <webjars-locator.version>1.0.1</webjars-locator.version>
