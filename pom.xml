@@ -237,7 +237,25 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+      <!-- Plugin from https://stackoverflow.com/questions/796486/how-to-create-a-release-package-with-maven -->
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+            <descriptors>
+                <descriptor>src/main/assembly/assembly.xml</descriptor>
+            </descriptors>
+        </configuration>
+        <executions>
+            <execution>
+                <phase>package</phase>
+                <goals>
+                    <goal>attached</goal>
+                </goals>
+            </execution>
+        </executions>
+    </plugin>
+     <plugin>
         <groupId>org.graalvm.buildtools</groupId>
         <artifactId>native-maven-plugin</artifactId>
       </plugin>
